@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "bracket": {
+    "width": 80.0,
+    "depth": 44.0,
+    "height": 50.0,
+    "thickness": 6.0,
+    "corner_radius": 3.0
+  },
+  "base_holes": {
+    "spacing": 40.0,
+    "y": 26.0,
+    "diameter": 6.6
+  },
+  "sensor_holes": {
+    "spacing": 24.0,
+    "z": 32.0,
+    "diameter": 4.5
+  },
+  "sensor": {
+    "origin": [
+      -18.0,
+      -18.0,
+      20.0
+    ],
+    "size": [
+      36.0,
+      18.0,
+      24.0
+    ]
+  },
+  "obstacles": [
+    {
+      "name": "harness_keepout",
+      "origin": [
+        48.0,
+        8.0,
+        10.0
+      ],
+      "size": [
+        12.0,
+        22.0,
+        35.0
+      ]
+    }
+  ],
+  "envelope": {
+    "origin": [
+      -50.0,
+      -25.0,
+      -1.0
+    ],
+    "size": [
+      115.0,
+      75.0,
+      65.0
+    ]
+  },
+  "requirements": {
+    "min_edge_distance": 5.0,
+    "min_clearance": 3.0
+  },
+  "material": {
+    "name": "6061-T6 aluminum (illustrative)",
+    "density_kg_m3": 2700.0
+  }
+}

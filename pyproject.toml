@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automotive-cad-copilot"
+version = "0.1.0"
+description = "Editable FreeCAD sensor brackets with a Codex-driven local workflow"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+cadcopilot = "cadcopilot.cli:main"
+
+[tool.setuptools]
+packages = ["cadcopilot"]

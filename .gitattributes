@@ -1,0 +1,3 @@
+*.FCStd binary
+*.step -diff
+artifacts/** linguist-generated=true

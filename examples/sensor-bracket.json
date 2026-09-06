@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "bracket": {"width": 80, "depth": 40, "height": 50, "thickness": 6, "corner_radius": 3},
+  "base_holes": {"spacing": 40, "y": 26, "diameter": 6.6},
+  "sensor_holes": {"spacing": 24, "z": 32, "diameter": 4.5},
+  "sensor": {"origin": [-18, -18, 20], "size": [36, 18, 24]},
+  "obstacles": [{"name": "harness_keepout", "origin": [48, 8, 10], "size": [12, 22, 35]}],
+  "envelope": {"origin": [-50, -25, -1], "size": [115, 75, 65]},
+  "requirements": {"min_edge_distance": 5, "min_clearance": 3},
+  "material": {"name": "6061-T6 aluminum (illustrative)", "density_kg_m3": 2700}
+}

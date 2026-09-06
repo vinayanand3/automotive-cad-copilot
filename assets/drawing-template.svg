@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:freecad="https://www.freecad.org/wiki/index.php?title=Svg_Namespace" width="297mm" height="210mm" viewBox="0 0 297 210">
+<g id="drawing-border"><rect x="5" y="5" width="287" height="200" fill="none" stroke="#263d50" stroke-width="0.4"/>
+<path d="M5 181H292 M5 193H292 M220 181V205" fill="none" stroke="#263d50" stroke-width="0.3"/>
+<g font-family="sans-serif" fill="#263d50"><text x="10" y="189" font-size="5">AUTOMOTIVE CAD COPILOT / SENSOR BRACKET</text><text x="10" y="200" font-size="3.2">SYNTHETIC CONCEPT / NOT FOR MANUFACTURE / DIMENSIONS IN mm</text><text x="224" y="189" font-size="2.8">__SCALE__</text><text x="224" y="200" font-size="2.8">__MATERIAL__</text></g>
+</g></svg>

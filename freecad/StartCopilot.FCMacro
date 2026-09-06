@@ -1,0 +1,10 @@
+# Run with FreeCAD's Macro > Macros > Execute, or pass this file on startup.
+import os
+import sys
+from pathlib import Path
+# FreeCAD sets __file__ for macros. CADCOPILOT_ROOT supports unusual launchers.
+root = Path(os.environ.get("CADCOPILOT_ROOT", str(Path(__file__).resolve().parents[1])))
+if str(root) not in sys.path:
+    sys.path.insert(0, str(root))
+from cadcopilot.bridge import start
+start(Path(os.environ.get("CADCOPILOT_WORKSPACE", str(root / ".cadcopilot"))))

@@ -1,0 +1,492 @@
+{
+  "status": "success",
+  "revision_id": "5423d021a4ba43b4a5071692d9d93600",
+  "source_revision": "c654ab3417d64ca0985a6e913be29c79",
+  "operation": "revise",
+  "resolved_parameters": {
+    "schema_version": 1,
+    "units": "mm",
+    "bracket": {
+      "width": 80.0,
+      "depth": 40.0,
+      "height": 50.0,
+      "thickness": 6.0,
+      "corner_radius": 3.0
+    },
+    "base_holes": {
+      "spacing": 50.0,
+      "y": 26.0,
+      "diameter": 6.6
+    },
+    "sensor_holes": {
+      "spacing": 24.0,
+      "z": 32.0,
+      "diameter": 4.5
+    },
+    "sensor": {
+      "origin": [
+        -18.0,
+        -18.0,
+        20.0
+      ],
+      "size": [
+        36.0,
+        18.0,
+        24.0
+      ]
+    },
+    "obstacles": [
+      {
+        "name": "harness_keepout",
+        "origin": [
+          48.0,
+          8.0,
+          10.0
+        ],
+        "size": [
+          12.0,
+          22.0,
+          35.0
+        ]
+      }
+    ],
+    "envelope": {
+      "origin": [
+        -50.0,
+        -25.0,
+        -1.0
+      ],
+      "size": [
+        115.0,
+        75.0,
+        65.0
+      ]
+    },
+    "requirements": {
+      "min_edge_distance": 5.0,
+      "min_clearance": 3.0
+    },
+    "material": {
+      "name": "6061-T6 aluminum (illustrative)",
+      "density_kg_m3": 2700.0
+    }
+  },
+  "checks": [
+    {
+      "name": "bracket_proportions",
+      "passed": true,
+      "actual": 6.0,
+      "required": "< 40.0",
+      "detail": ""
+    },
+    {
+      "name": "corner_radius",
+      "passed": true,
+      "actual": 3.0,
+      "required": "<= thickness 6.0 and < internal legs",
+      "detail": ""
+    },
+    {
+      "name": "base_edge_distance",
+      "passed": true,
+      "actual": 10.7,
+      "required": 5.0,
+      "detail": "Distance from hole rim to outer boundary or inner fillet tangent."
+    },
+    {
+      "name": "base_hole_separation",
+      "passed": true,
+      "actual": 43.4,
+      "required": 5.0,
+      "detail": ""
+    },
+    {
+      "name": "sensor_edge_distance",
+      "passed": true,
+      "actual": 15.75,
+      "required": 5.0,
+      "detail": "Distance from hole rim to outer boundary or inner fillet tangent."
+    },
+    {
+      "name": "sensor_hole_separation",
+      "passed": true,
+      "actual": 19.5,
+      "required": 5.0,
+      "detail": ""
+    },
+    {
+      "name": "sensor_mounting_contact",
+      "passed": true,
+      "actual": 0.0,
+      "required": 0,
+      "detail": "Sensor front face must meet rear bracket face y=0."
+    },
+    {
+      "name": "sensor_interface_-12",
+      "passed": true,
+      "actual": [
+        -12.0,
+        32.0
+      ],
+      "required": "Hole contained in sensor mounting face",
+      "detail": ""
+    },
+    {
+      "name": "sensor_interface_12",
+      "passed": true,
+      "actual": [
+        12.0,
+        32.0
+      ],
+      "required": "Hole contained in sensor mounting face",
+      "detail": ""
+    },
+    {
+      "name": "valid_single_solid",
+      "passed": true,
+      "actual": 1,
+      "required": 1,
+      "detail": ""
+    },
+    {
+      "name": "measured_width",
+      "passed": true,
+      "actual": 80.0,
+      "required": 80.0,
+      "detail": ""
+    },
+    {
+      "name": "measured_depth",
+      "passed": true,
+      "actual": 40.0,
+      "required": 40.0,
+      "detail": ""
+    },
+    {
+      "name": "measured_height",
+      "passed": true,
+      "actual": 50.0,
+      "required": 50.0,
+      "detail": ""
+    },
+    {
+      "name": "measured_base_holes",
+      "passed": true,
+      "actual": [
+        [
+          -25.0,
+          26.0,
+          6.6
+        ],
+        [
+          25.0,
+          26.0,
+          6.6
+        ]
+      ],
+      "required": [
+        [
+          -25.0,
+          26.0,
+          6.6
+        ],
+        [
+          25.0,
+          26.0,
+          6.6
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "measured_base_edge_distance",
+      "passed": true,
+      "actual": 10.7,
+      "required": 5.0,
+      "detail": ""
+    },
+    {
+      "name": "measured_sensor_holes",
+      "passed": true,
+      "actual": [
+        [
+          -12.0,
+          32.0,
+          4.5
+        ],
+        [
+          12.0,
+          32.0,
+          4.5
+        ]
+      ],
+      "required": [
+        [
+          -12.0,
+          32.0,
+          4.5
+        ],
+        [
+          12.0,
+          32.0,
+          4.5
+        ]
+      ],
+      "detail": ""
+    },
+    {
+      "name": "measured_sensor_edge_distance",
+      "passed": true,
+      "actual": 15.75,
+      "required": 5.0,
+      "detail": ""
+    },
+    {
+      "name": "measured_base_thickness",
+      "passed": true,
+      "actual": [
+        0.0,
+        6.0,
+        50.0
+      ],
+      "required": 6.0,
+      "detail": ""
+    },
+    {
+      "name": "measured_upright_thickness",
+      "passed": true,
+      "actual": [
+        0.0,
+        6.0,
+        40.0
+      ],
+      "required": 6.0,
+      "detail": ""
+    },
+    {
+      "name": "measured_corner_radius",
+      "passed": true,
+      "actual": [
+        3.0
+      ],
+      "required": 3.0,
+      "detail": ""
+    },
+    {
+      "name": "fully_constrained_BaseSketch",
+      "passed": true,
+      "actual": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "fully_constrained_UprightSketch",
+      "passed": true,
+      "actual": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "fully_constrained_BaseHoleSketch",
+      "passed": true,
+      "actual": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "fully_constrained_SensorHoleSketch",
+      "passed": true,
+      "actual": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "sensor_no_interference",
+      "passed": true,
+      "actual": 0.0,
+      "required": "<= 0.000001 mm3",
+      "detail": ""
+    },
+    {
+      "name": "sensor_intended_contact",
+      "passed": true,
+      "actual": 0.0,
+      "required": 0,
+      "detail": ""
+    },
+    {
+      "name": "bracket_inside_envelope",
+      "passed": true,
+      "actual": {
+        "origin": [
+          -40.0,
+          0.0,
+          0.0
+        ],
+        "size": [
+          80.0,
+          40.0,
+          50.0
+        ]
+      },
+      "required": {
+        "origin": [
+          -50.0,
+          -25.0,
+          -1.0
+        ],
+        "size": [
+          115.0,
+          75.0,
+          65.0
+        ]
+      },
+      "detail": ""
+    },
+    {
+      "name": "sensor_inside_envelope",
+      "passed": true,
+      "actual": {
+        "origin": [
+          -18.0,
+          -18.0,
+          20.0
+        ],
+        "size": [
+          36.0,
+          18.0,
+          24.0
+        ]
+      },
+      "required": {
+        "origin": [
+          -50.0,
+          -25.0,
+          -1.0
+        ],
+        "size": [
+          115.0,
+          75.0,
+          65.0
+        ]
+      },
+      "detail": ""
+    },
+    {
+      "name": "bracket_to_harness_keepout_no_interference",
+      "passed": true,
+      "actual": 0.0,
+      "required": "<= 0.000001 mm3",
+      "detail": ""
+    },
+    {
+      "name": "bracket_to_harness_keepout_clearance",
+      "passed": true,
+      "actual": 8.246211251235321,
+      "required": 3.0,
+      "detail": ""
+    },
+    {
+      "name": "sensor_to_harness_keepout_no_interference",
+      "passed": true,
+      "actual": 0.0,
+      "required": "<= 0.000001 mm3",
+      "detail": ""
+    },
+    {
+      "name": "sensor_to_harness_keepout_clearance",
+      "passed": true,
+      "actual": 31.04834939252005,
+      "required": 3.0,
+      "detail": ""
+    },
+    {
+      "name": "step_roundtrip",
+      "passed": true,
+      "actual": {
+        "solid_count": 1,
+        "max_bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.0
+      },
+      "required": "same solids, bbox <= 0.01 mm, volume <= max(0.001 mm3, 1 ppm)",
+      "detail": ""
+    },
+    {
+      "name": "native_reopen",
+      "passed": true,
+      "actual": true,
+      "required": true,
+      "detail": ""
+    },
+    {
+      "name": "native_edit_recompute",
+      "passed": true,
+      "actual": {
+        "width_mm": 82.0,
+        "base_spacing_mm": 52.0,
+        "errors": []
+      },
+      "required": "valid recompute and sensor holes unchanged; edits discarded",
+      "detail": ""
+    }
+  ],
+  "measured_values": {
+    "bounding_box": {
+      "origin": [
+        -40.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        80.0,
+        40.0,
+        50.0
+      ]
+    },
+    "volume_mm3": 39873.11824067715,
+    "mass_g": 107.6574192498283,
+    "base_holes": [
+      [
+        -25.0,
+        26.0,
+        6.6
+      ],
+      [
+        25.0,
+        26.0,
+        6.6
+      ]
+    ],
+    "sensor_holes": [
+      [
+        -12.0,
+        32.0,
+        4.5
+      ],
+      [
+        12.0,
+        32.0,
+        4.5
+      ]
+    ],
+    "clearances_mm": {
+      "sensor_mounting_contact": 0.0,
+      "bracket_to_harness_keepout": 8.246211251235321,
+      "sensor_to_harness_keepout": 31.04834939252005
+    }
+  },
+  "errors": [],
+  "artifacts": {
+    "native": "bracket.FCStd",
+    "step": "bracket.step",
+    "drawing": "drawing.pdf",
+    "drawing_svg": "drawing.svg",
+    "assembly_image": "assembly.png",
+    "bracket_image": "bracket.png",
+    "report": "report.md",
+    "result": "result.json",
+    "spec": "spec.json"
+  },
+  "elapsed_seconds": 1.6441561249957886,
+  "freecad_version": "1.1.3"
+}

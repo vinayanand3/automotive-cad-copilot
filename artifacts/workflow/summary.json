@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "revision_preserves_sensor_interface",
+    "rejection_retains_latest",
+    "native_validate",
+    "export_preserves_source",
+    "timeout_retains_latest",
+    "build_after_timeout"
+  ],
+  "restart_recovery": "passed"
+}

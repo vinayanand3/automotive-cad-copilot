@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.cadcopilot/
+.DS_Store
+*.FCStd1
+*.FCBak
+artifacts/benchmark/*-result.json
+artifacts/workflow/result.json
+artifacts/demo/frames/
+artifacts/demo/drawing.png

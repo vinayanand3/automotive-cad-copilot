@@ -1,0 +1,149 @@
+{
+  "status": "rejected",
+  "revision_id": null,
+  "source_revision": null,
+  "resolved_parameters": {
+    "schema_version": 1,
+    "units": "mm",
+    "bracket": {
+      "width": 60.0,
+      "depth": 40.0,
+      "height": 50.0,
+      "thickness": 6.0,
+      "corner_radius": 3.0
+    },
+    "base_holes": {
+      "spacing": 50.0,
+      "y": 26.0,
+      "diameter": 6.6
+    },
+    "sensor_holes": {
+      "spacing": 24.0,
+      "z": 32.0,
+      "diameter": 4.5
+    },
+    "sensor": {
+      "origin": [
+        -18.0,
+        -18.0,
+        20.0
+      ],
+      "size": [
+        36.0,
+        18.0,
+        24.0
+      ]
+    },
+    "obstacles": [
+      {
+        "name": "harness_keepout",
+        "origin": [
+          48.0,
+          8.0,
+          10.0
+        ],
+        "size": [
+          12.0,
+          22.0,
+          35.0
+        ]
+      }
+    ],
+    "envelope": {
+      "origin": [
+        -50.0,
+        -25.0,
+        -1.0
+      ],
+      "size": [
+        115.0,
+        75.0,
+        65.0
+      ]
+    },
+    "requirements": {
+      "min_edge_distance": 5.0,
+      "min_clearance": 3.0
+    },
+    "material": {
+      "name": "6061-T6 aluminum (illustrative)",
+      "density_kg_m3": 2700.0
+    }
+  },
+  "checks": [
+    {
+      "name": "bracket_proportions",
+      "passed": true,
+      "actual": 6.0,
+      "required": "< 40.0",
+      "detail": ""
+    },
+    {
+      "name": "corner_radius",
+      "passed": true,
+      "actual": 3.0,
+      "required": "<= thickness 6.0 and < internal legs",
+      "detail": ""
+    },
+    {
+      "name": "base_edge_distance",
+      "passed": false,
+      "actual": 1.7000000000000002,
+      "required": 5.0,
+      "detail": "Distance from hole rim to outer boundary or inner fillet tangent."
+    },
+    {
+      "name": "base_hole_separation",
+      "passed": true,
+      "actual": 43.4,
+      "required": 5.0,
+      "detail": ""
+    },
+    {
+      "name": "sensor_edge_distance",
+      "passed": true,
+      "actual": 15.75,
+      "required": 5.0,
+      "detail": "Distance from hole rim to outer boundary or inner fillet tangent."
+    },
+    {
+      "name": "sensor_hole_separation",
+      "passed": true,
+      "actual": 19.5,
+      "required": 5.0,
+      "detail": ""
+    },
+    {
+      "name": "sensor_mounting_contact",
+      "passed": true,
+      "actual": 0.0,
+      "required": 0,
+      "detail": "Sensor front face must meet rear bracket face y=0."
+    },
+    {
+      "name": "sensor_interface_-12",
+      "passed": true,
+      "actual": [
+        -12.0,
+        32.0
+      ],
+      "required": "Hole contained in sensor mounting face",
+      "detail": ""
+    },
+    {
+      "name": "sensor_interface_12",
+      "passed": true,
+      "actual": [
+        12.0,
+        32.0
+      ],
+      "required": "Hole contained in sensor mounting face",
+      "detail": ""
+    }
+  ],
+  "measured_values": {},
+  "errors": [
+    "base_edge_distance"
+  ],
+  "artifacts": {}
+}

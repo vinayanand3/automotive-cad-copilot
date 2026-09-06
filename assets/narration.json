@@ -1,0 +1,26 @@
+[
+  {
+    "duration": 10,
+    "text": "This CAD copilot turns engineering instructions into an editable sensor bracket, using Free CAD, Python, and Codex. Here's the workflow."
+  },
+  {
+    "duration": 12,
+    "text": "The model retains native sketches, constraints, pads, pockets, and a corner fillet. Named parameters drive the geometry. The sensor and nearby obstacle provide a synthetic packaging example."
+  },
+  {
+    "duration": 14,
+    "text": "First, increase the base mounting hole spacing from forty to fifty millimeters. The assistant creates a new revision while preserving the sensor mounting interface. Both versions remain available for inspection."
+  },
+  {
+    "duration": 13,
+    "text": "Now request a sixty millimeter width. The assistant rejects it: the hole edge distance would be one point seven millimeters, below the required five. The last successful model stays intact."
+  },
+  {
+    "duration": 14,
+    "text": "Checks use the resulting geometry, including hole placement, interference, and clearance. Native files reopen and recompute, and STEP exports are reimported for comparison. The deliverables include a dimensioned drawing and validation reports."
+  },
+  {
+    "duration": 12,
+    "text": "Ten scripted design scenarios and nineteen contract and queue tests passed. This demonstration covers geometric validation for one component family. Find the code and artifacts on GitHub."
+  }
+]

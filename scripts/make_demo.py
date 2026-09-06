@@ -5,6 +5,7 @@ Requires Pillow, ffmpeg and pdftoppm. No generated/fabricated CAD imagery.
 import argparse
 import json
 import subprocess
+import sys
 import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
@@ -281,6 +282,7 @@ def main():
     for p in clips:
         p.unlink()
     listing.unlink()
+    subprocess.run([sys.executable, str(ROOT / "scripts/add_narration.py")], check=True)
     print(out / "automotive-cad-copilot.mp4")
 
 

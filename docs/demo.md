@@ -1,8 +1,8 @@
 # Demo and reproducibility
 
-The supplied MP4 is a 75-second edited artifact walkthrough, not an uncut screen recording. It uses real FreeCAD renders, the generated drawing, actual validation values and native feature names extracted from FCStd. The feature-history panel is a presentation of native file contents, not a fabricated FreeCAD screenshot. No narration or AI-generated CAD imagery is used.
+The supplied MP4 is a 75-second edited artifact walkthrough, not an uncut screen recording. It uses real FreeCAD renders, the generated drawing, actual validation values and native feature names extracted from FCStd. The feature-history panel is a presentation of native file contents, not a fabricated FreeCAD screenshot. The audio is synthetic English narration using the macOS Samantha voice, timed to each scene. No AI-generated CAD imagery is used.
 
-Run `python scripts/make_demo.py` with Pillow, ffmpeg and pdftoppm installed to regenerate it. Default fonts are macOS Arial; pass `--font` and `--bold-font` on other systems.
+Run `python scripts/make_demo.py` with Pillow, ffmpeg and pdftoppm installed to regenerate it. Default fonts are macOS Arial; pass `--font` and `--bold-font` on other systems. The build automatically includes the checked-in `artifacts/demo/narration.m4a` audio track. To change the voiceover, edit `assets/narration.json` and run `python scripts/add_narration.py --regenerate` on macOS. Use `--voice` to select another installed system voice. Speech is normalized and padded to its scene duration; the script rejects text that would require excessive acceleration. Video frames are preserved when adding audio.
 
 For a live recording, use the project skill and these requests in sequence:
 

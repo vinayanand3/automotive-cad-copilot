@@ -10,7 +10,19 @@ The example is synthetic automotive packaging geometry. It demonstrates CAD auto
 
 ## First time using this project
 
-Start with the [beginner handover guide](docs/handover/README.md), available as PDF, Word and copyable Markdown. It includes installation, a complete walkthrough, expected test results, troubleshooting and blank tester forms.
+Download the [complete beginner handover pack](https://github.com/vinayanand3/automotive-cad-copilot/raw/refs/heads/main/docs/Automotive-CAD-Copilot-Handover-Pack.zip), extract it, and open `START-HERE.txt`. The 30-page guide assumes no previous knowledge of this project and explains installation, creating and revising CAD, inspecting artifacts, testing expected failures, and troubleshooting.
+
+| Resource | Use it for |
+| --- | --- |
+| [PDF guide](docs/handover/Automotive-CAD-Copilot-Handover.pdf) | Follow the illustrated setup and testing walkthrough |
+| [Editable Word guide](docs/handover/Automotive-CAD-Copilot-Handover.docx) | Add handover notes or adapt the instructions |
+| [Copyable instructions](docs/handover/guide.md) | Copy terminal commands and Codex prompts |
+| [Scenario results sheet](docs/handover/results-template.csv) | Record ten conversational tests, timings, retries and interventions |
+| [Tester notes form](docs/handover/tester-notes-template.txt) | Record the environment, acceptance checks and defects |
+
+For a handover, send the ZIP and this repository link to the tester. The pack contains documentation and blank forms; the guide explains how to download the application code and install its prerequisites. Start at section 1, then return the evidence described in section 18. See the [handover overview](docs/handover/README.md) for version details.
+
+The walkthrough targets **macOS Apple Silicon with FreeCAD 1.1.3**. Other platforms remain unverified. Existing repository results are reference evidence; each tester should record their own outcomes.
 
 ## Quick start
 

@@ -1,0 +1,80 @@
+AUTOMOTIVE CAD COPILOT TESTER NOTES
+
+Fill this in after reading the handover guide. Copy it into your dated evidence folder.
+Use PASS, FAIL, BLOCKED or NOT RUN. Do not replace missing evidence with the author's results.
+
+TESTER AND ENVIRONMENT
+Tester name or ID:
+Date, start time and timezone:
+Computer chip and macOS version:
+CLI Python version and executable path:
+FreeCAD version:
+Repository commit (or ZIP download date and GitHub commit):
+Codex app version, model and reasoning settings (if used):
+Project location:
+Evidence folder:
+Prior CAD experience:
+Prior Python or Terminal experience:
+Prior Codex experience:
+Setup time (separate from scenario timing):
+Help needed during setup:
+
+FIRST WALKTHROUGH
+Bridge ready:
+Baseline status and revision ID:
+Baseline measurements match expected values:
+Native tree and named parameters visible:
+Manual edit on a copy and reopen (optional):
+50 mm spacing revision status and ID:
+Measured sensor pattern and placement unchanged:
+60 mm narrowing rejected with 1.7 mm versus 5 mm:
+Latest revision unchanged after rejection:
+Native validation:
+Export and source preservation:
+Drawing readability and dimension review:
+Images reviewed:
+Evidence paths for the above:
+
+AUTOMATED CHECKS
+Unit tests: count, exit code, outcome and log path:
+Ten scripted CAD scenarios: pass count, exit code and report path:
+Workflow checks: outcome, exit code and log path:
+Missing dimension test:
+Malformed input test:
+Equivalent inch specification test:
+Unavailable bridge and idle restart:
+Timeout and recovery through workflow script:
+Interrupted-job crash recovery: NOT RUN unless explicitly supervised and tested
+
+CONVERSATIONAL TESTS
+Completed results-template.csv path:
+Number attempted out of ten:
+First-attempt passes out of ten:
+Eventual passes out of ten:
+Not run count and reasons:
+Total retries:
+Total manual interventions:
+Transcript or task links:
+Practice runs excluded from scored results:
+
+DEFECT OR UNCLEAR INSTRUCTION (repeat for each issue)
+Title:
+Guide section:
+Exact prompt or command:
+Input file:
+Expected result:
+Actual result:
+Error code and revision/job ID:
+Evidence path:
+Last successful revision:
+Recovery attempted and result:
+Help needed:
+
+FINAL ASSESSMENT
+Overall outcome: PASS / FAIL / BLOCKED / PARTIAL
+What worked independently:
+What required help:
+What was not tested:
+Would a first-time user be able to repeat the workflow with this guide?
+Suggested wording or setup improvements:
+Manual timing comparison: NOT MEASURED unless comparable tasks were actually timed

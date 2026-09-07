@@ -1,0 +1,11 @@
+tester,date_timezone,repository_commit,platform,python_version,freecad_version,codex_model_settings,scenario,expected,first_attempt_pass,eventual_pass,elapsed_seconds,retries,manual_interventions,observed_status,revision_id,evidence_path,notes
+,,,,,,,baseline,success,,,,,,NOT RUN,,,
+,,,,,,,width84,success,,,,,,NOT RUN,,,
+,,,,,,,depth44,success,,,,,,NOT RUN,,,
+,,,,,,,height54,success,,,,,,NOT RUN,,,
+,,,,,,,thickness7,success,,,,,,NOT RUN,,,
+,,,,,,,spacing50,success,,,,,,NOT RUN,,,
+,,,,,,,too_narrow,rejected,,,,,,NOT RUN,,,
+,,,,,,,radius100,rejected,,,,,,NOT RUN,,,
+,,,,,,,interference,rejected,,,,,,NOT RUN,,,
+,,,,,,,clearance,rejected,,,,,,NOT RUN,,,

@@ -8,6 +8,10 @@ The example is synthetic automotive packaging geometry. It demonstrates CAD auto
 
 ![Generated sensor bracket](artifacts/examples/baseline/bracket.png)
 
+## First time using this project
+
+Start with the [beginner handover guide](docs/handover/README.md), available as PDF, Word and copyable Markdown. It includes installation, a complete walkthrough, expected test results, troubleshooting and blank tester forms.
+
 ## Quick start
 
 Requirements: Python 3.10+, FreeCAD **1.1.3** with its bundled Python, and Codex for the conversational workflow. The CLI has no third-party Python dependencies. macOS Apple Silicon is the tested platform. Other FreeCAD platforms need validation.
